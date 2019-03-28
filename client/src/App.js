@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import {ApolloProvider} from 'react-apollo';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Provider} from 'react-redux';
-import HomeView from './views/HomeView';
-import client from './ApolloClient';
-import store from './store';
-import ApartmentView from "./views/ApartmentView";
+import React, { Component } from 'react'
+import { ApolloProvider } from 'react-apollo'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import HomeView from './views/HomeView'
+import client from './ApolloClient'
+import store from './store'
+import ApartmentView from './views/ApartmentView'
 
 class App extends Component {
   render() {
@@ -14,14 +14,20 @@ class App extends Component {
         <Provider store={store}>
           <Router>
             <div>
-              <Route exact path="/" component={HomeView}/>
-              <Route exact path="/apartments/:apartmentId" component={ApartmentView}/>
+              <Switch>
+                <Route exact path="/" component={HomeView} />
+                <Route
+                  exact
+                  path="/apartments/:apartmentId"
+                  component={ApartmentView}
+                />
+              </Switch>
             </div>
           </Router>
         </Provider>
       </ApolloProvider>
-    );
+    )
   }
 }
 
-export default App;
+export default App
