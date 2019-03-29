@@ -51,8 +51,8 @@ export class ApartmentView extends React.Component {
                         </span>
                       </div>
                       <div className="Lsdn2hC-tehVod76x4HzK">
-                        <span className="_17om8IEGFeu2W2TBOJ6xQs">Owner: </span>
-                        <span className="Lsdn2hC-tehVod76x4HzK">
+                        <span className="Lsdn2hC-tehVod76x4HzK">Owner: </span>
+                        <span className="_17om8IEGFeu2W2TBOJ6xQs">
                           {`${apartment.owner.profile.firstName} ${
                             apartment.owner.profile.lastName
                           }`}
