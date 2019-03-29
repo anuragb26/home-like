@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import ApartmentAmentityView from './ApartmentAmentityView'
 
 export class ApartmentView extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     const {
       match: { params }
     } = this.props
