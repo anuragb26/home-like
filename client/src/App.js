@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import HomeView from './views/HomeView'
+import HomeView from './views/containers/HomeView'
 import client from './ApolloClient'
 import store from './store'
-import ApartmentView from './views/ApartmentView'
+import ApartmentView from './views/components/ApartmentView'
 
 class App extends Component {
   render() {

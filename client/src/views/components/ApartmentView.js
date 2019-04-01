@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchApartment } from '../actions/apartmentActions'
+import { fetchApartment } from '../../actions/apartmentActions'
 import { connect } from 'react-redux'
 import ApartmentAmentityView from './ApartmentAmentityView'
 
